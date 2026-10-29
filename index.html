@@ -3,34 +3,51 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>APS School - Quality Education</title>
+<title>Al Taj Public High School - PG to FSc, ICS | Pakki Haveli Kasur</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'Poppins',sans-serif;background:#f8fafc;color:#1e293b}
 :root{--navy:#0f2040;--gold:#facc15}
-.top-bar{background:var(--navy);color:white;padding:8px 20px;font-size:13px;display:flex;justify-content:space-between}
-.nav{background:white;padding:12px 5%;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 10px rgba(0,0,0,0.08);position:sticky;top:0}
+.top-bar{background:var(--navy);color:white;padding:8px 20px;font-size:11px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:5px}
+.nav{background:white;padding:12px 5%;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 15px rgba(0,0,0,0.08);position:sticky;top:0;z-index:99}
 .logo{display:flex;gap:12px;align-items:center}
-.logo-box{background:var(--navy);color:var(--gold);border:2px solid var(--gold);width:55px;height:55px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:22px}
-.hero{background:linear-gradient(135deg,var(--navy),#1e3a8a);color:white;padding:60px 5%;display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.hero h2{font-family:'Playfair Display';font-size:38px;line-height:1.1}
+.logo-box{background:var(--navy);color:var(--gold);border:2px solid var(--gold);width:55px;height:55px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:20px;font-family:'Playfair Display'}
+.hero{background:linear-gradient(135deg,var(--navy) 0%, #1e3a8a 100%);color:white;padding:50px 5%;display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:center}
+.hero h2{font-family:'Playfair Display';font-size:36px;line-height:1.1}
 .hero h2 span{color:var(--gold)}
-.btn{padding:12px 28px;border-radius:30px;text-decoration:none;font-weight:600;display:inline-block;margin-top:15px}
+.badge{background:rgba(250,204,21,0.15);border:1px solid var(--gold);color:var(--gold);padding:6px 14px;border-radius:20px;font-size:11px;display:inline-block;margin-bottom:12px}
+.btn{padding:12px 26px;border-radius:30px;text-decoration:none;font-weight:600;display:inline-block;margin-top:12px;font-size:14px}
 .btn-gold{background:var(--gold);color:var(--navy)}
-.btn-outline{border:2px solid white;color:white;margin-left:10px}
-.card{background:white;border-radius:16px;padding:20px;box-shadow:0 4px 20px rgba(0,0,0,0.06);margin-top:20px}
-.section{padding:50px 5%}
+.btn-outline{border:2px solid white;color:white;margin-left:8px}
+.card{background:white;border-radius:16px;padding:20px;box-shadow:0 4px 20px rgba(0,0,0,0.06);border:1px solid #e2e8f0}
+.section{padding:45px 5%}
+.section-title{text-align:center;margin-bottom:28px}
+.section-title h3{font-family:'Playfair Display';font-size:30px;color:var(--navy)}
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
-footer{background:#020617;color:#94a3b8;padding:30px 5%;text-align:center}
-@media(max-width:700px){.hero,.grid3{grid-template-columns:1fr}}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}
+.principal{background:linear-gradient(135deg,#fefce8,#fef9c3);border:2px solid var(--gold);border-radius:20px;padding:25px;display:flex;gap:20px;align-items:center}
+.location{background:var(--navy);color:white;border-radius:20px;padding:30px;display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:center}
+.map-box{background:white;border-radius:12px;padding:5px;height:250px;overflow:hidden}
+.map-box iframe{width:100%;height:100%;border:0;border-radius:8px}
+footer{background:#020617;color:#94a3b8;padding:30px 5%;text-align:center;font-size:13px}
+@media(max-width:800px){.hero,.grid3,.grid2,.location,.principal{grid-template-columns:1fr;flex-direction:column}.hero h2{font-size:30px}}
 </style>
 </head>
 <body>
-<div class="top-bar"><span>📍 Lahore | 📞 0300-1234567</span><span>Admissions Open</span></div>
-<div class="nav"><div class="logo"><div class="logo-box">APS</div><div><h1 style="font-size:18px;color:var(--navy)">APS SCHOOL</h1><p style="font-size:11px;color:gray">Only for those who wants quality education</p></div></div></div>
-<div class="hero"><div><h2>Quality Education<br><span>For Bright Future</span></h2><p style="margin-top:15px;opacity:0.9">APS School provides excellent education, moral values and modern learning.</p><a href="#" class="btn btn-gold">Apply Now</a><a href="#" class="btn btn-outline">Learn More</a></div><div class="card" style="color:#1e293b"><img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=800" style="width:100%;border-radius:12px;height:250px;object-fit:cover"><h3 style="margin-top:10px">Welcome to APS</h3><p style="font-size:13px;color:gray">Modern classrooms & qualified teachers</p></div></div>
-<div class="section"><h3 style="text-align:center;font-size:28px;color:var(--navy)">Why Choose APS?</h3><div class="grid3"><div class="card">📚 <b>Quality Education</b><p style="font-size:13px;color:gray">Modern curriculum</p></div><div class="card">👩‍🏫 <b>Qualified Staff</b><p style="font-size:13px;color:gray">Experienced teachers</p></div><div class="card">🕌 <b>Islamic Values</b><p style="font-size:13px;color:gray">Deen & Dunya together</p></div></div></div>
-<footer><b style="color:white">APS SCHOOL</b> - Only for those who wants quality education<br><br>© 2025 APS School</footer>
+
+<div class="top-bar"><span>📍 Pakki Haveli, Hazara, Dist Kasur | 📞 03004529873</span><span>PG to FSc, ICS | Academy Facility Available</span></div>
+
+<div class="nav"><div class="logo"><div class="logo-box">APS</div><div><h1 style="font-size:16px;color:var(--navy);line-height:1.2">AL TAJ PUBLIC HIGH SCHOOL</h1><p style="font-size:10px;color:gray">PG to FSc, ICS | Only for those who wants quality education</p></div></div><a href="tel:03004529873" class="btn btn-gold" style="padding:8px 18px;font-size:12px;margin:0">📞 Call Now</a></div>
+
+<div class="hero"><div><span class="badge">✨ PG TO FSc, ICS - ADMISSIONS OPEN</span><h2>Al Taj Public<br><span>High School</span></h2><p style="margin-top:10px;opacity:0.9;font-size:14px">From Play Group to FSc & ICS. We provide quality education with Islamic values + Evening Academy facility for all classes.</p><div style="margin-top:15px"><span style="background:rgba(255,255,255,0.15);padding:6px 12px;border-radius:20px;font-size:12px;margin-right:6px">✅ PG to 10th</span><span style="background:rgba(255,255,255,0.15);padding:6px 12px;border-radius:20px;font-size:12px;margin-right:6px">✅ FSc / ICS</span><span style="background:rgba(255,255,255,0.15);padding:6px 12px;border-radius:20px;font-size:12px">✅ Academy</span></div><a href="https://wa.me/923004529873" class="btn btn-gold">WhatsApp Now</a><a href="#contact" class="btn btn-outline">Our Location</a></div><div class="card" style="color:#1e293b"><img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=800" style="width:100%;border-radius:12px;height:240px;object-fit:cover"><h3 style="margin-top:12px">PG to FSc, ICS</h3><p style="font-size:12px;color:gray;margin-top:5px">Complete education under one roof + Separate Academy facility for weak students & board preparation.</p></div></div>
+
+<div class="section"><div class="principal"><img src="https://randomuser.me/api/portraits/men/75.jpg" style="width:90px;height:90px;border-radius:50%;border:3px solid var(--gold)"><div><h3 style="color:var(--navy);font-size:20px">Hafiz Muhammed Akhtar</h3><p style="font-size:13px;color:#ca8a04;font-weight:700">Principal - Advocate</p><p style="font-size:13px;color:#475569;margin-top:6px">Hafiz-e-Quran, Advocate High Court. 15+ years experience in education. Vision is to provide quality education in Pakki Haveli area from PG to College level.</p></div></div></div>
+
+<div class="section" style="padding-top:0"><div class="section-title"><h3>Our Programs</h3></div><div class="grid3"><div class="card"><h4>🎒 PG to Primary</h4><p style="font-size:12px;color:gray;margin-top:5px">Strong base with Montessori system, Nazra Quran, English speaking.</p></div><div class="card"><h4>📚 Middle to Matric</h4><p style="font-size:12px;color:gray;margin-top:5px">Science & Arts, Computer Lab, Board preparation classes.</p></div><div class="card" style="border:2px solid var(--navy)"><h4>🎓 FSc / ICS College</h4><p style="font-size:12px;color:gray;margin-top:5px">FSc Pre-Medical, Pre-Engineering & ICS with expert professors.</p></div><div class="card" style="background:#0f2040;color:white"><h4>🌙 Evening Academy</h4><p style="font-size:12px;opacity:0.8;margin-top:5px">Special academy facility for all classes. Weak students, homework & test session.</p></div><div class="card"><h4>🕌 Islamic Values</h4><p style="font-size:12px;color:gray;margin-top:5px">Daily Quran, Namaz, Moral training with modern education.</p></div><div class="card"><h4>💻 Modern Education</h4><p style="font-size:12px;color:gray;margin-top:5px">Computer classes, Smart learning, Qualified staff.</p></div></div></div>
+
+<div class="section" id="contact"><div class="location"><div><h3 style="font-size:28px">Visit Our Campus</h3><p style="opacity:0.9;margin-top:8px;font-size:14px">Al Taj Public High School</p><div style="margin-top:18px;background:rgba(255,255,255,0.1);padding:16px;border-radius:12px;font-size:13px;line-height:1.8"><p>📍 <b>Pakki Haveli, Hazara</b><br>Tehsil & District Kasur, Punjab, Pakistan</p><p style="margin-top:10px">👨‍🏫 <b>Principal:</b> Hafiz Muhammed Akhtar (Advocate)</p><p>📞 <b>Phone / WhatsApp:</b> 03004529873</p><p>🕘 <b>School:</b> 8:00 AM - 2:00 PM<br>🌙 <b>Academy:</b> 3:00 PM - 6:00 PM</p><a href="tel:03004529873" class="btn btn-gold" style="margin-top:15px;font-size:12px">📞 Call Now</a><a href="https://wa.me/923004529873" class="btn btn-outline" style="font-size:12px">WhatsApp</a></div></div><div class="map-box"><iframe src="https://maps.google.com/maps?q=Pakki%20Haveli%20Hazara%20Kasur&t=&z=14&ie=UTF8&iwloc=&output=embed"></iframe></div></div></div>
+
+<footer><b style="color:white">AL TAJ PUBLIC HIGH SCHOOL (APS)</b><br>From PG to FSc, ICS | Academy Facility Available<br>Principal: Hafiz Muhammed Akhtar (Advocate)<br><br>📍 Pakki Haveli, Hazara, Dist Kasur | 📞 03004529873<br><br>© 2025 Al Taj Public High School. Only for those who wants quality education.</footer>
 </body>
 </html>
