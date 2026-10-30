@@ -6,20 +6,20 @@
 <title>APS School System - Pakki Haveli</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Arial, sans-serif;background:#fff5f5;color:#333}
+body{font-family:Arial;background:#fff5f5}
 .header{background:#cc0000;color:white;text-align:center;padding:0 0 20px 0}
-.school-banner{width:100%;height:220px;background:#ffcccc;display:flex;align-items:center;justify-content:center;color:#990000;font-weight:bold;border:3px dashed #cc0000;position:relative}
-.school-banner span{background:rgba(255,255,255,0.9);padding:8px 15px;border-radius:20px}
-.yellow-phone{background:yellow;color:black;padding:10px 25px;border-radius:30px;font-weight:bold;font-size:22px;border:3px solid black;display:inline-block;margin-top:15px;box-shadow:0 3px 10px rgba(0,0,0,0.3)}
+.school-banner{width:100%;height:230px;background:#ffcccc;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.school-banner img{width:100%;height:100%;object-fit:cover}
+.yellow-phone{background:yellow;color:black;padding:10px 25px;border-radius:30px;font-weight:bold;font-size:22px;border:3px solid black;display:inline-block;margin-top:15px}
 .card{background:white;margin:15px;padding:15px;border-radius:12px;display:flex;gap:15px;align-items:center;box-shadow:0 3px 15px rgba(204,0,0,0.15);border-left:5px solid #cc0000}
-.timing-box{background:white;margin:15px;padding:15px;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,0.1)}
-.timing-item{background:#fff0f0;border:2px solid #cc0000;border-radius:10px;padding:12px;margin:10px 0;display:flex;justify-content:space-between;align-items:center}
-.edit-tag{background:#cc0000;color:white;font-size:11px;padding:2px 8px;border-radius:10px;margin-left:5px}
-.section{background:white;margin:15px;padding:20px;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,0.08);border-top:4px solid #cc0000}
+.timing-box{background:white;margin:15px;padding:15px;border-radius:12px}
+.timing-item{background:#fff0f0;border:2px solid #cc0000;border-radius:10px;padding:12px;margin:10px 0;display:flex;justify-content:space-between}
+.edit-tag{background:#cc0000;color:white;font-size:11px;padding:2px 8px;border-radius:10px}
+.section{background:white;margin:15px;padding:20px;border-radius:12px;border-top:4px solid #cc0000}
 .section h2{color:#cc0000;margin-bottom:15px}
 .programs{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.prog{background:linear-gradient(135deg,#cc0000,#ff3333);color:white;padding:15px;border-radius:10px;text-align:center;font-weight:bold;box-shadow:0 3px 8px rgba(204,0,0,0.3)}
-.prog small{display:block;font-weight:normal;font-size:12px;margin-top:4px;opacity:0.9}
+.prog{background:linear-gradient(135deg,#cc0000,#ff3333);color:white;padding:15px;border-radius:10px;text-align:center;font-weight:bold}
+.prog small{display:block;font-weight:normal;font-size:12px;margin-top:4px}
 .btn{display:inline-block;padding:12px 25px;border-radius:8px;text-decoration:none;font-weight:bold;margin:5px}
 .btn-red{background:#cc0000;color:white}
 .btn-green{background:#25D366;color:white}
@@ -28,13 +28,10 @@ body{font-family:Arial, sans-serif;background:#fff5f5;color:#333}
 <body>
 
 <div class="header">
-<!-- SCHOOL PIC KE LIYE JAGAH - AAP BAAD ME EDIT KAR SAKTI HAIN -->
-<!-- Jab school ki pic upload karo to iska naam school.jpg rakhna -->
+<!-- SCHOOL PIC - YAHAN AAP BAAD ME CHANGE KAR SAKTI HAIN -->
 <div class="school-banner">
-<img src="school.jpg" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0;display:block" onerror="this.style.display='none'">
-<span>📸 School Pic Yahan Ayegi (school.jpg upload karein)</span>
+<img src="school.jpg" alt="APS School">
 </div>
-
 <div style="padding:20px 15px 0 15px">
 <h1>APS School System</h1>
 <p>Pakki Haveli, Hazara - Dist Kasur</p>
@@ -48,71 +45,59 @@ body{font-family:Arial, sans-serif;background:#fff5f5;color:#333}
 <div>
 <h3 style="color:#cc0000">Hafiz Muhammed Akhtar</h3>
 <p style="color:gray;font-size:13px">Advocate | Principal</p>
-<p style="font-size:13px;margin-top:3px">PG to FSc, ICS + Academy</p>
+<p style="font-size:13px">PG to FSc, ICS + Academy</p>
 </div>
 </div>
 
 <div class="timing-box">
-<h2 style="color:#cc0000;margin-bottom:10px">⏰ Timings - Editable</h2>
-
+<h2 style="color:#cc0000">⏰ Timings - Editable</h2>
 <div class="timing-item">
 <div>
 <b>🏫 School Timing</b> <span class="edit-tag">EDITABLE</span><br>
-<!-- YAHAN SCHOOL TIMING CHANGE KAREIN -->
+<!-- SCHOOL TIMING YAHAN EDIT KAREIN -->
 <span style="font-size:18px;font-weight:bold">7:45 AM to 1:30 PM</span>
 </div>
 <div style="font-size:30px">🏫</div>
 </div>
-
-<div class="timing-item" style="background:#f0fff0;border-color:green">
+<div class="timing-item" style="border-color:green;background:#f0fff0">
 <div>
 <b>📚 Academy Timing</b> <span class="edit-tag" style="background:green">EDITABLE</span><br>
-<!-- YAHAN ACADEMY TIMING CHANGE KAREIN -->
+<!-- ACADEMY TIMING YAHAN EDIT KAREIN -->
 <span style="font-size:18px;font-weight:bold">2:00 PM to 5:00 PM</span>
 </div>
 <div style="font-size:30px">📖</div>
 </div>
-
-<p style="font-size:12px;color:gray;margin-top:10px">* Upar wale time ko code me change kar sakti hain</p>
 </div>
 
 <div class="section">
 <h2>📚 Our Programs</h2>
 <div class="programs">
-<div class="prog">PG - Play Group<small>Age 3-4 Years</small></div>
+<div class="prog">PG - Play Group<small>Age 3-4</small></div>
 <div class="prog">Nursery to Prep<small>Montessori</small></div>
 <div class="prog">Primary<small>Class 1 to 5</small></div>
 <div class="prog">Middle<small>Class 6 to 8</small></div>
-<div class="prog">Matric Level<small>Class 9-10 (Sci/Arts)</small></div>
+<div class="prog">Matric Level<small>9th - 10th</small></div>
 <div class="prog">College Level<small>FSc | ICS | FA</small></div>
 </div>
 <div style="background:#ffeaea;padding:12px;border-radius:8px;margin-top:15px;text-align:center;border:2px dashed #cc0000">
-<b>🌟 Evening Academy</b><br>Special Coaching for All Classes + Computer Courses
+<b>🌟 Evening Academy for All Classes</b>
 </div>
 </div>
 
 <div class="section">
 <h2>🌟 Why APS School?</h2>
-<p>✅ Quality Education with Islamic Values<br><br>
-✅ Highly Qualified & Experienced Staff<br><br>
-✅ Focus on English Speaking & Computer<br><br>
-✅ Affordable Fee & Scholarships<br><br>
-✅ Neat, Clean & Secure Campus<br><br>
-✅ Regular Parents-Teacher Meeting</p>
+<p>✅ Quality Education with Islamic Values<br><br>✅ Highly Qualified Teachers<br><br>✅ English & Computer Focus<br><br>✅ Affordable Fee<br><br>✅ Clean & Secure Campus</p>
 </div>
 
 <div class="section" style="text-align:center">
 <h2>📍 Contact Us</h2>
-<p><b>APS School, Pakki Haveli, Hazara</b><br>District Kasur, Punjab</p><br>
-<p>Principal: Hafiz Muhammed Akhtar (Advocate)</p><br>
+<p><b>Pakki Haveli, Hazara, Kasur</b></p><br>
 <a href="tel:03004529873" class="btn btn-red">📞 Call Now</a>
 <a href="https://wa.me/923004529873" class="btn btn-green">WhatsApp</a>
-<br><br>
-<p style="font-size:13px;color:gray">School Pic ke liye: school.jpg naam se pic upload karein</p>
 </div>
 
 <div style="background:#cc0000;color:white;text-align:center;padding:15px;font-size:13px">
-© 2026 APS School System - Pakki Haveli<br>Red & White Theme | Quality Education
+© 2026 APS School System - Pakki Haveli
 </div>
 
 </body>
